@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51AFDAC2743870900617C9E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51AFDAB2743870900617C9E /* Timer.swift */; };
+		B51AFDAE27438D1600617C9E /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51AFDAD27438D1600617C9E /* MainCollectionViewController.swift */; };
+		B51AFDB027438D2C00617C9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51AFDAF27438D2C00617C9E /* DetailViewController.swift */; };
+		B51AFDB327438D4B00617C9E /* TimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51AFDB227438D4B00617C9E /* TimerCollectionViewCell.swift */; };
 		B5EBF4D8273DECA300F47504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EBF4D7273DECA300F47504 /* AppDelegate.swift */; };
 		B5EBF4DA273DECA300F47504 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EBF4D9273DECA300F47504 /* SceneDelegate.swift */; };
-		B5EBF4DC273DECA300F47504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EBF4DB273DECA300F47504 /* ViewController.swift */; };
 		B5EBF4DF273DECA300F47504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EBF4DD273DECA300F47504 /* Main.storyboard */; };
 		B5EBF4E1273DECA400F47504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EBF4E0273DECA400F47504 /* Assets.xcassets */; };
 		B5EBF4E4273DECA400F47504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EBF4E2273DECA400F47504 /* LaunchScreen.storyboard */; };
@@ -67,10 +70,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B51AFDAB2743870900617C9E /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		B51AFDAD27438D1600617C9E /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		B51AFDAF27438D2C00617C9E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B51AFDB227438D4B00617C9E /* TimerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5EBF4D4273DECA300F47504 /* TapMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EBF4D7273DECA300F47504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5EBF4D9273DECA300F47504 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5EBF4DB273DECA300F47504 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5EBF4DE273DECA300F47504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5EBF4E0273DECA400F47504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EBF4E3273DECA400F47504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +112,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51AFDA6274386BC00617C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5EBF4D7273DECA300F47504 /* AppDelegate.swift */,
+				B5EBF4D9273DECA300F47504 /* SceneDelegate.swift */,
+				B5EBF4E0273DECA400F47504 /* Assets.xcassets */,
+				B5EBF4E5273DECA400F47504 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B51AFDA7274386C800617C9E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51AFDA8274386D400617C9E /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B51AFDA8274386D400617C9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51AFDAD27438D1600617C9E /* MainCollectionViewController.swift */,
+				B51AFDAF27438D2C00617C9E /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B51AFDA9274386DF00617C9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B51AFDB127438D3600617C9E /* Custom Cells */,
+				B5EBF4DD273DECA300F47504 /* Main.storyboard */,
+				B5EBF4E2273DECA400F47504 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B51AFDAA274386EF00617C9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B51AFDAB2743870900617C9E /* Timer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B51AFDB127438D3600617C9E /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B51AFDB227438D4B00617C9E /* TimerCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		B5EBF4CB273DECA200F47504 = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +189,10 @@
 		B5EBF4D6273DECA300F47504 /* TapMeIn */ = {
 			isa = PBXGroup;
 			children = (
-				B5EBF4D7273DECA300F47504 /* AppDelegate.swift */,
-				B5EBF4D9273DECA300F47504 /* SceneDelegate.swift */,
-				B5EBF4DB273DECA300F47504 /* ViewController.swift */,
-				B5EBF4DD273DECA300F47504 /* Main.storyboard */,
-				B5EBF4E0273DECA400F47504 /* Assets.xcassets */,
-				B5EBF4E2273DECA400F47504 /* LaunchScreen.storyboard */,
-				B5EBF4E5273DECA400F47504 /* Info.plist */,
+				B51AFDAA274386EF00617C9E /* Models */,
+				B51AFDA9274386DF00617C9E /* Views */,
+				B51AFDA6274386BC00617C9E /* Resources */,
+				B51AFDA7274386C800617C9E /* Controllers */,
 			);
 			path = TapMeIn;
 			sourceTree = "<group>";
@@ -295,8 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EBF4DC273DECA300F47504 /* ViewController.swift in Sources */,
+				B51AFDAC2743870900617C9E /* Timer.swift in Sources */,
+				B51AFDAE27438D1600617C9E /* MainCollectionViewController.swift in Sources */,
+				B51AFDB027438D2C00617C9E /* DetailViewController.swift in Sources */,
 				B5EBF4D8273DECA300F47504 /* AppDelegate.swift in Sources */,
+				B51AFDB327438D4B00617C9E /* TimerCollectionViewCell.swift in Sources */,
 				B5EBF4DA273DECA300F47504 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +611,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -578,7 +638,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -591,14 +651,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5WKQ59823;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TapMeIn/Info.plist;
+				INFOPLIST_FILE = TapMeIn/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tap Me In";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,14 +683,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5WKQ59823;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TapMeIn/Info.plist;
+				INFOPLIST_FILE = TapMeIn/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tap Me In";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
