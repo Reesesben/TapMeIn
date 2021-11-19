@@ -132,6 +132,9 @@
                                         <color key="tintColor" red="1" green="0.079273669769999999" blue="0.06024985561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButtonTapped:" destination="Jve-cG-9Oz" eventType="touchUpInside" id="Wx3-mt-RDe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32r-R0-amP">
                                         <rect key="frame" x="152.5" y="0.0" width="134.5" height="134.5"/>
@@ -139,24 +142,36 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="32r-R0-amP" secondAttribute="height" multiplier="1:1" id="w1R-69-mSg"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.30861574580000001" green="0.59841493400000001" blue="0.31711401080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                        <connections>
+                                            <action selector="startPauseButtonTapped:" destination="Jve-cG-9Oz" eventType="touchUpInside" id="z7m-Ll-eFP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Time Remaining)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-Cz-Xa0">
+                                <rect key="frame" x="88" y="381" width="238" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="71k-BX-dSm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iyw-Cz-Xa0" firstAttribute="centerX" secondItem="TFX-3f-0Nc" secondAttribute="centerX" id="11D-hS-6Zq"/>
                             <constraint firstItem="dBE-Gy-oxk" firstAttribute="top" secondItem="TFX-3f-0Nc" secondAttribute="bottom" constant="24" id="326-72-9sX"/>
                             <constraint firstItem="71k-BX-dSm" firstAttribute="bottom" secondItem="amW-8n-4FO" secondAttribute="bottom" constant="24" id="JKd-AV-BMa"/>
                             <constraint firstItem="amW-8n-4FO" firstAttribute="top" secondItem="dBE-Gy-oxk" secondAttribute="bottom" constant="24" id="NBS-Ko-VFe"/>
+                            <constraint firstItem="iyw-Cz-Xa0" firstAttribute="width" secondItem="TFX-3f-0Nc" secondAttribute="width" multiplier="0.9" id="PtI-dg-adS"/>
                             <constraint firstItem="amW-8n-4FO" firstAttribute="centerX" secondItem="71k-BX-dSm" secondAttribute="centerX" id="QCF-4t-pyx"/>
                             <constraint firstItem="TFX-3f-0Nc" firstAttribute="centerX" secondItem="71k-BX-dSm" secondAttribute="centerX" id="asl-6E-IGn"/>
                             <constraint firstItem="dBE-Gy-oxk" firstAttribute="width" secondItem="N8U-TQ-Sw5" secondAttribute="width" multiplier="0.8" id="bKM-QU-s0y"/>
                             <constraint firstItem="dBE-Gy-oxk" firstAttribute="centerX" secondItem="71k-BX-dSm" secondAttribute="centerX" id="cZ6-ca-M5e"/>
                             <constraint firstItem="TFX-3f-0Nc" firstAttribute="width" secondItem="dBE-Gy-oxk" secondAttribute="width" multiplier="0.8" id="knS-hS-aYW"/>
+                            <constraint firstItem="TFX-3f-0Nc" firstAttribute="top" secondItem="iyw-Cz-Xa0" secondAttribute="bottom" constant="8" id="nh2-X8-3xP"/>
                             <constraint firstItem="amW-8n-4FO" firstAttribute="height" secondItem="N8U-TQ-Sw5" secondAttribute="height" multiplier="0.15" id="yGX-Yn-qQr"/>
                         </constraints>
                     </view>
@@ -165,6 +180,7 @@
                         <outlet property="startPauseButton" destination="32r-R0-amP" id="HIZ-hc-gE6"/>
                         <outlet property="stopButton" destination="nxh-4R-9WT" id="B42-x1-L1F"/>
                         <outlet property="timePicker" destination="dBE-Gy-oxk" id="Gls-6D-kDh"/>
+                        <outlet property="timeRemaingLabel" destination="iyw-Cz-Xa0" id="ETM-Wu-qsZ"/>
                         <outlet property="timeRemainingSlider" destination="TFX-3f-0Nc" id="sqU-qa-s5j"/>
                     </connections>
                 </viewController>
@@ -200,6 +216,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

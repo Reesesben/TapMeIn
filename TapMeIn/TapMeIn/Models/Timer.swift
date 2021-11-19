@@ -9,10 +9,12 @@ import Foundation
 
 class Timer {
     let startTime: Date
-    let timeLeft: Double
+    let elapsedTime: Double
+    let duration: Double
     
-    init(startTime: Date, timeLeft: Double) {
+    init(startTime: Date, elapsedTime: Double, duration: Double) {
         self.startTime = startTime
-        self.timeLeft = timeLeft
+        self.elapsedTime = elapsedTime
+        self.duration = duration
     }
 }
